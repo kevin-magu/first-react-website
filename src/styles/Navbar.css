@@ -13,9 +13,22 @@
     text-decoration: none;
     color: white;
 }
+.menu-bar{
+    color: rgb(0, 0, 0);
+}
 
-@media screen and (min-width: 500px) {
-    .rightside{
+.hidden-links{
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .li{
         display: none;
+        font-size: 12px;
+    }
+    button{
+        display: block;
+    }
+    #open{
+        display: block;
     }
 }
