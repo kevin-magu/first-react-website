@@ -6,13 +6,13 @@ import { useState } from "react";
 function Navbar() {
   const [openLinks, setOpenLinks] = useState(false);
   const toggleNavbar= () =>{
-    setOpenLinks(true)
+    setOpenLinks(!openLinks)
   }
 
   return (
     <div className="navbar">
         <div className="leftside" >
-          <p>Logo</p>
+          <p className={openLinks? "logo-hidden" : "logo-show"}>Logo</p>
             <div className="hidden-links" id={openLinks ? "open" : "close"}>
             <Link className="li" to="/">Home</Link>
             <Link className="li" to="/menu">Menu</Link>

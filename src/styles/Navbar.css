@@ -17,18 +17,32 @@
     color: rgb(0, 0, 0);
 }
 
-.hidden-links{
+button{
     display: none;
 }
+
 @media screen and (max-width: 500px) {
-    .li{
+    .rightside .li{
         display: none;
         font-size: 12px;
+    }
+    .leftside .li{
+        font-size: 14px;
     }
     button{
         display: block;
     }
+    
     #open{
+        display: block;
+    }
+    #close{
+        display: none;
+    }
+    .logo-hidden{
+        display: none;
+    }
+    .logo-show{
         display: block;
     }
 }
